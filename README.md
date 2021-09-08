@@ -1,6 +1,6 @@
 # Progressive Growing of GANs
 
-- Paper："[Progressive growing of gans for improved quality, stability, and variation](https://arxiv.org/abs/1710.10196)" 
+- Reference Paper："[Progressive growing of gans for improved quality, stability, and variation](https://arxiv.org/abs/1710.10196)" 
 
 
 
