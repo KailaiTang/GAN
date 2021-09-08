@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Training",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/train.py",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Preprocessing of testing",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/roou.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--input=fits_test",
+                "--fwhm=1.4",
+                "--sig=1.2",
+                "--mode=1"
+            ]
+        },
+        {
+            "name": "Preprocessing of training",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceRoot}/roou.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--input=fits_train",
+                "--fwhm=1.4",
+                "--sig=1.2",
+                "--mode=0"
+            ]
+        }
+    ]
+}
